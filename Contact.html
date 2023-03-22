@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light text-purple" style="background-color: #d6b88a;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="NYK.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  The New York Knicks
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="NYK.html">View The New York Knicks</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">RJ Barett</a></li>
+                  <li><a class="dropdown-item" href="#">Jalen Brunson</a></li>
+                  <li><a class="dropdown-item" href="#">Evan Fournier</a></li>
+                  <li><a class="dropdown-item" href="#">Quentin Grimes</a></li>
+                  <li><a class="dropdown-item" href="#">Josh Hart</a></li>
+                  <li><a class="dropdown-item" href="#">Isaiah Hartenstein</a></li>
+                  <li><a class="dropdown-item" href="#">DaQuan Jeffries</a></li>
+                  <li><a class="dropdown-item" href="#">Trevor Keels</a></li>
+                  <li><a class="dropdown-item" href="#">Miles McBride</a></li>
+                  <li><a class="dropdown-item" href="#">Immanuel Quickley</a></li>
+                  <li><a class="dropdown-item" href="#">Julius Randle</a></li>
+                  <li><a class="dropdown-item" href="#">Mitchell Robinson</a></li>
+                  <li><a class="dropdown-item" href="#">Derrick Rose</a></li>
+                  <li><a class="dropdown-item" href="#">Jericho Sims</a></li>
+                  <li><a class="dropdown-item" href="#">Obi Toppin</a></li>
+                  <li><a class="dropdown-item" href="#">Duane Washington Jr.</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Tom Thibodeau</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contact.html">Contact me</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        <main>
+        <h1>Welcome to the contacts page</h1>
+        <p>For any business inquires please complete this form</p>
+        <form action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+        method="post"
+       >
+    <label>Enter your full name here:</label>
+    <br>
+    <input placeholder="Daeon James" name="full_name">
+    <br>
+    <label>Enter your email here:</label>
+    <br>
+    <input placeholder="Djames@brooklynsteamcenter.org" name="email">
+    <br>
+    <label>What is the best day to contact you:</label>
+    <br>
+    <input type="Date" name="Date">
+    <br>
+    <label>What is the best contact time:</label>
+    <br>
+    <input type="time" name="Time">
+    <br>
+    <label>Comments:</label>
+    <br>
+    <textarea name="Comments"></textarea>
+    <br>
+    <input type="Submit">
+    <input type="Reset">
+    <input name="send-to" value="djames@brooklynsteamcenter.org" hidden>
+</form>
+</main>
+</body>
+</html>
